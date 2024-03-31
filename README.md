@@ -1,1 +1,4 @@
-# react-todo-list
+# react-typescript-app
+
+- TODOリスト
+- Pagination
