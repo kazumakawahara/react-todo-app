@@ -32,7 +32,7 @@ function App() {
 
 	const handleEdit = (id: number, inputValue: string) => {
 		const newTodos = todos.map((todo) => {
-			if (todo.id == id) {
+			if (todo.id === id) {
 				todo.inputValue = inputValue;
 			}
 
@@ -44,7 +44,7 @@ function App() {
 
 	const handleChecked = (id: number, checked: boolean) => {
 		const newTodos = todos.map((todo) => {
-			if (todo.id == id) {
+			if (todo.id === id) {
 				todo.checked = !checked;
 			}
 
@@ -85,7 +85,9 @@ function App() {
 								type="checkbox"
 								onChange={(e) => handleChecked(todo.id, todo.checked)}
 							/>
-							<button onClick={() => handleDelete(todo.id)}>消</button>
+							<button type="button" onClick={() => handleDelete(todo.id)}>
+								消
+							</button>
 						</li>
 					))}
 				</ul>
