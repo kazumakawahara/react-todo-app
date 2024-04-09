@@ -1,9 +1,9 @@
 type Album = {
-    albumId: number
-    id: number
-    thumbnailUrl: string
-    title: string
-    url: string
-}
+	albumId: number;
+	id: number;
+	thumbnailUrl: string;
+	title: string;
+	url: string;
+};
 
-export default Album
+export default Album;
